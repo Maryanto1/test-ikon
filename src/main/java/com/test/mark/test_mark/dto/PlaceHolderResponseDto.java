@@ -5,18 +5,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PlaceHolderResponseDto  implements Serializable {
+public class PlaceHolderResponseDto implements Serializable {
 
-    private List<DataResponse> dataResponses;
-
-    @Data
-    public class DataResponse {
-        public Integer userId;
-        public Integer id;
-    }
+        private Integer userId;
+        private Integer id;
 }
